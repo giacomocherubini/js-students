@@ -14,10 +14,13 @@ var studente = {
   'eta': 20
 };
 
-// stampo attraverso il for le propietà dello studente
+// stampo attraverso il for in le propietà dello studente
 for (var field in studente) {
-  console.log(studente[field]);
-}
+  console.log(studente[field])
+};
+
+// creo una riga vuota tramite un console.log
+console.log(' ');
 
 // creo un arrey di oggetti di studenti
 var studenti = [
@@ -38,10 +41,15 @@ var studenti = [
 }
 ];
 
+// stampo tramite un ciclo for le proprietà nome e cognome degli oggetti dell'array studenti
 for (var i = 0; i < studenti.length; i++) {
   console.log(studenti[i].nome + ' ' + studenti[i].cognome);
-}
+};
 
+// creo una riga vuota tramite un console.log
+console.log(' ');
+
+// creo 3 prompt per inserire 3 proprieta di un nuovo oggetto
 var inserisci_nome = prompt('Inserisci nome');
 var inserisci_cognome = prompt('Inserisci cognome');
 var inserisci_eta = prompt('Inserisci eta');
@@ -52,8 +60,10 @@ var nuovo_studente = {
   'eta': inserisci_eta
 };
 
+// inserisco il nuovo oggetto nell'array
 studenti.push(nuovo_studente);
 
+// stampo un console.log dell'array aggiornato
 for (var i = 0; i < studenti.length; i++) {
-  console.log(studenti[i].nome + ' ' + studenti[i].cognome);
-}
+  console.log(studenti[i].nome + ' ' + studenti[i].cognome + ' ' + studenti[i].eta)
+};
